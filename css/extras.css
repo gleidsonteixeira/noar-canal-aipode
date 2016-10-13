@@ -1,0 +1,510 @@
+/* CSS Document */
+.condesed{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#oculto{
+	display:none;
+}
+.np{
+	padding:0px !important;
+}
+.nm{
+	margin:0px !important;
+}
+.nr{
+	border-radius:0px !important;
+}
+.clear{
+	clear: both;
+}
+.click{
+	cursor:pointer;
+}
+.suave{
+	transition-duration:0.3s;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-duration:0.3s;
+	-ms-transition-duration:0.3s;
+	-o-transition-duration:0.3s;
+}
+.suave:hover{
+	transition-duration:0.3s;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-duration:0.3s;
+	-ms-transition-duration:0.3s;
+	-o-transition-duration:0.3s;
+}
+.hover-base{
+	overflow:hidden;
+	position:relative;
+}
+.hover{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:1;
+	background-color:rgba(0,0,0,.4);
+	opacity:0;
+	transform:scale(0.7,0.7);
+	-webkit-transform:scale(0.7,0.7);
+	-moz-transform:scale(0.7,0.7);
+	-ms-transform:scale(0.7,0.7);
+	-o-transform:scale(0.7,0.7);
+}
+.hover-base:hover .hover{
+	opacity:1;
+	transform:scale(1,1);
+	-webkit-transform:scale(1,1);
+	-moz-transform:scale(1,1);
+	-ms-transform:scale(1,1);
+	-o-transform:scale(1,1);
+}
+.upper{
+	text-transform:uppercase;
+}
+.btn{
+	border-radius: 50px;
+}
+.btn.transparent{
+	border: 2px solid #FFF;
+	line-height: 52px;
+}
+.lato{
+	font-family: 'Lato', sans-serif;
+}
+.hind{
+	font-family: 'Hind Guntur', sans-serif;
+}
+
+/****************************************************************************************/
+
+#tTopo{
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+}
+#tTopo .container{
+	position: relative;
+}
+#tTopo .container::before{
+	content: "";
+	width: 350px;
+	height: 300px;
+	background-image: url("../img/topo-bg.png"); 
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -20px;
+	left: -130px;
+	z-index: 0;
+}
+#tTopo .logo{
+	width: 120px;
+	height: 120px;
+	display: block;
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+}
+#tTopo .logo img{
+	width: 100%;
+}
+#tTopo .perfil{
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#tTopo .perfil h6,
+#tTopo .perfil img{
+	display: inline-block;
+	vertical-align: middle;
+}
+#tTopo .perfil img{
+	width: 40px;
+	height: 40px;
+	margin-left: 15px;
+}
+#tTopo .perfil h6 a{
+	display: block;
+}
+#tTopo .perfil h6 a:hover{
+	text-decoration: underline;
+}
+#tTopo h2{
+	margin: 0;
+	height: 50px;
+	font-size: 36px;
+	line-height: 50px;
+	position: relative;
+	z-index: 5;
+}
+#tTopo .menu{
+	width: 100%;
+	height: 50px;
+}
+#tTopo .menu .side-nav{
+	left: 0;
+}
+#tTopo .menu a.button-collapse{
+	width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+}
+#tTopo .menu ul.menu-itens {
+	height: 50px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+#tTopo .menu ul.menu-itens li{
+	display: inline-block;
+	line-height: 50px;
+	padding: 0 10px;
+	position: relative;
+}
+#tTopo .menu ul.menu-itens li.active::after{
+	content: "";
+	width: 100%;
+	height: 6px;
+	border-radius: 3px;
+	background-color: #b2ff59;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#tTopo .menu form {
+	height: 40px;
+	margin-top: 5px;
+	display: inline-block;
+	border: 2px solid #b2ff59;
+	border-radius: 30px;
+	padding-left: 15px;
+	padding-right: 10px;
+	position: relative;
+	z-index: 5;
+}
+#tTopo .menu form input{
+	height: 36px;
+	width: 250px;
+	box-shadow: none;
+	border: 0;
+	line-height: 36px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+}
+#tTopo .menu form button{
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	border: 0;
+	background-color: transparent;
+	font-size: 22px;
+	line-height: 36px;
+}
+#tTopo .menu ul.redes{
+	height: 50px;
+	display: inline-block;
+}
+#tTopo .menu ul.redes li{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	border-radius: 100%;
+	margin-top: 5px;
+	text-align: center;
+	margin-left: 20px;
+}
+#tTopo .menu ul.redes li::before{
+	content: "";
+	width: 150px;
+	height: 100%;
+	background-color: rgba(0,0,0,.1);
+	position: absolute;
+	top: -9px;
+	right: 20px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform-origin: right top;
+	-webkit-transform-origin: right top;
+	-moz-transform-origin: right top;
+	-ms-transform-origin: right top;
+	-o-transform-origin: right top;
+	border-radius: 30px;
+}
+#tTopo .menu ul.redes li a{
+	display: block;
+	border-radius: 100%;
+	position: relative;
+	z-index: 5;
+}
+
+#tContent{}
+#tContent .container{
+	background-image: url("../img/content-bg.png"); 
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-height: 650px;
+}
+#tContent .col{
+	position: relative;
+}
+#tContent h6 {
+	padding-top: 50px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+#tContent h6 b{
+	display: inline-block;
+	position: relative;
+}
+#tContent h6 b::before{
+	content: "";
+	width: 50px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: #00838f;
+	position: absolute;
+	top: 6px;
+	left: calc(100% + 15px);
+}
+#tContent .prev,
+#tContent .next{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	position: absolute;
+	top: calc(50% - 20px);
+	left: -10px;
+	border-radius: 100%;
+}
+#tContent .next{
+	left: inherit;
+	right: -10px;
+}
+#tContent #tSlides img{
+	border-radius: 30px;
+}
+#tContent h4{
+	position: relative;
+	padding-bottom: 10px;
+}
+#tContent h4::before{
+	content: "";
+	width: 50px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: #00838f;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+#tContent span{
+	font-weight: bold;
+}
+#tContent .btn{
+	height: 40px;
+	line-height: 40px;
+	border-radius: 30px;
+	text-transform: capitalize;
+	margin-top: 20px;
+}
+
+#tContent .ultimas img{
+	border-radius: 15px;
+}
+#tContent .ultimas a:hover p{
+	text-decoration: underline;
+}
+
+#tContent .aovivo{
+	background-color: #111;
+	padding: 20px 0;
+}
+#tContent .aovivo .container{
+	position: relative;
+}
+#tContent .aovivo img{
+	width: 100%;
+	border-radius: 30px;
+}
+#tContent .aovivo .contador{
+	width: 100%;
+	height: 150px;
+}
+#tContent .aovivo-content h4{
+	margin-top: 50px;
+}
+#tContent .aovivo-perfil{
+	padding-left:  80px;
+	position: relative;
+}
+#tContent .aovivo-perfil img{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#tContent .aovivo-perfil a{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 15px;
+}
+#tContent .aovivo-pago{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
+#tContent .sobre{
+	margin-top: 100px;
+}
+#tContent .sobre img{
+	width: 100px;
+	height: 100px;
+}
+#tContent .sobre h4::before{
+	left: calc(50% - 25px);
+}
+
+#tContent .contato{
+	margin-top: 100px;
+}
+#tContent .contato input,
+#tContent .contato textarea{
+	height: 40px;
+	border: 2px solid #333;
+	border-radius: 20px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	box-shadow: none;
+}
+#tContent .contato textarea{
+	height: 150px;
+	outline: 0;
+	padding-top: 10px;
+}
+#tContent .contato input::-webkit-input-placeholder,
+#tContent .contato textarea::-webkit-input-placeholder {
+	color: #333;
+	font-weight: bold;
+}
+
+#tContent .contato input:-moz-placeholder,
+#tContent .contato textarea:-moz-placeholder {
+	color: #333;
+	font-weight: bold;
+}
+
+#tContent .contato input::-moz-placeholder,
+#tContent .contato textarea::-moz-placeholder {
+	color: #333;
+	font-weight: bold;  
+}
+
+#tContent .contato input:-ms-input-placeholder,
+#tContent .contato textarea:-ms-input-placeholder {
+	color: #333; 
+	font-weight: bold; 
+}
+#tContent .contato input:focus,
+#tContent .contato textarea:focus{
+	border-color: #00838f;
+}
+
+#tRodape{
+	height: 100px;
+	margin-top: 50px;
+	padding: 20px 0;
+}
+#tRodape a{
+	display: block;
+}
+#tRodape img{
+	height: 60px;
+	margin-right: 10px;
+}
+#tRodape ul{
+	padding-top: 10px;
+	display: inline-block;
+}
+#tRodape ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#tRodape ul li:hover{
+	text-decoration: underline;
+}
+
+
+@media only screen and ( max-width: 768px ) {
+	#tContent .container{
+		min-height: auto;
+	}
+	#tContent .aovivo-pago{
+		position: relative;
+		top: initial;
+		transform: none;
+	}
+}
+
+@media only screen and ( max-width: 480px ) {
+	#tTopo .logo{
+		width: 60px;
+		height: 60px;
+	}
+	#tTopo .menu form input{
+		width: 155px;
+	}
+	#tContent .container{
+		min-height: auto;
+	}
+	#tContent .contato{
+		margin-top: 0px;
+	}
+	#tRodape{
+		height: auto;
+	}
+	#tRodape a.left{
+		float: none !important;
+		margin: 0 auto;
+	}
+	#tContent .sobre{
+		margin-top: 50px;
+	}
+	#tContent .aovivo-pago{
+		position: relative;
+		top: initial;
+		transform: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
