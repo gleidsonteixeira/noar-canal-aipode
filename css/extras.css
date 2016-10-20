@@ -500,10 +500,319 @@
 }
 
 
+/*****************************************************************************/
 
+body{
+	font-family: 'Open Sans', sans-serif;
+}
 
+.dark-blue{
+	background-color: #010f1b !important;
+}
+.dark-blue-text{
+	color: #010f1b !important;
+}
+.high-blue{
+	background-color: #63cbe4 !important;
+}
+.high-blue-text{
+	color: #63cbe4 !important;
+}
+.high-pink{
+	background-color: #e13664 !important;
+}
+.high-pink-text{
+	color: #e13664 !important;
+}
 
+#pTopo{
+	width: 100%;
+	height: 80px;
+}
+#pTopo .button-collapse i{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 36px;
+	display: block;
+	float: left;
+	margin-top: 20px;
+}
+#pTopo .side-nav{
+	left: 0;
+}
+#pTopo .logo{
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+#pTopo .logo img{
+	width: 100%;
+}
+#pTopo .container{
+	position: relative;
+}
+#pTopo .perfil{
+	height: 40px;
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+#pTopo .perfil h6,
+#pTopo .perfil img{
+	display: inline-block;
+	vertical-align: middle;
+}
+#pTopo .perfil img{
+	width: 40px;
+	height: 40px;
+	margin-left: 15px;
+}
+#pTopo .perfil h6 a{
+	display: block;
+}
+#pTopo .perfil h6 a:hover{
+	text-decoration: underline;
+}
 
+#pContent .container{
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding-top: 50px;
+}
+
+#pContent .pBanner{
+	width: 100% !important;
+	height: 400px;
+	position: relative;
+	overflow: hidden !important;
+}
+#pContent .pBanner .prev,
+#pContent .pBanner .next{
+	width: 50px;
+	height: 100px;
+	position: absolute;
+	top: calc(50% - 50px);
+	left: 0;
+	border-radius: 0 50px 50px 0;
+	text-align: center;
+	z-index: 100;
+}
+#pContent .pBanner .next{
+	border-radius: 50px 0 0 50px;
+	left: calc(100vw - 66px);
+}
+#pContent .pBanner .prev i,
+#pContent .pBanner .next i{
+	width: 50px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 36px;
+}
+#pContent .pBanner img{
+	height: 400px;
+}
+
+#pContent .pCategorias{}
+#pContent .pCategorias form{
+	border-radius: 30px 30px 0 0;
+	padding: 20px;
+	padding-bottom: 10px;
+}
+#pContent .pCategorias form input{
+	height: 40px;
+	border-radius: 20px;
+	border:0;
+	box-shadow: none;
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin-bottom: 0;
+}
+#pContent .pCategorias ul.cat{
+	padding: 20px;
+	padding-top: 0;
+	border-radius: 0 0 30px 30px;
+}
+#pContent .pCategorias ul.cat li a{
+	color: white;
+}
+#pContent .pCategorias ul.cat li a.active{
+	color: #e13664;
+}
+#pContent .pCategorias ul.cat li a:hover{
+	text-decoration: underline;
+}
+#pContent .pCategorias h6,
+#pContent .pIngressos h6,
+#pContent .pProfissionais h6{
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+}
+#pContent .pCategorias h6 span,
+#pContent .pIngressos h6 span,
+#pContent .pProfissionais h6 span{
+	position: relative;
+	display: inline-block;
+}
+#pContent .pCategorias h6 span::before,
+#pContent .pIngressos h6 span::before,
+#pContent .pProfissionais h6 span::before{
+	content: "";
+	width: 50px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: currentColor;
+	position: absolute;
+	top: 18px;
+	left: calc(100% + 20px);
+}
+#pContent .pCategorias img{
+	border-radius: 10px;
+}
+#pContent .pCategorias .item{
+	margin-bottom: 20px;
+}
+#pContent .pCategorias .item h6{
+	margin-bottom: 0;
+	padding-left: 10px;
+	height: auto;
+	line-height: initial;
+	margin-top: 5px;
+}
+#pContent .pCategorias .item span{
+	padding-left: 10px;
+}
+#pContent .pCategorias ul.pas{
+	width: 250px;
+	margin: 20px auto;
+}
+#pContent .pCategorias ul.pas li{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin: 0 5px;
+	text-align: center;
+	border-radius: 20px;
+	line-height: 40px;
+	cursor: pointer;
+}
+#pContent .pCategorias ul.pas li i{
+	font-size: 20px;
+}
+
+#pContent .pIngressos{
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+#pContent .pIngressos .pSlider{
+	position: relative;
+}
+#pContent .pIngressos .pSlider img{
+	border-radius: 30px;
+}
+#pContent .pIngressos .pSlider .prev,
+#pContent .pIngressos .pSlider .next{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border-radius: 20px;
+	line-height: 40px;
+	cursor: pointer;
+	position: absolute;
+	top: calc(50% - 20px);
+	left: -20px;
+	font-size: 20px;
+}
+#pContent .pIngressos .pSlider .next{
+	left: initial;
+	right: -20px;
+}
+#pContent .pIngressos .pDesc h4{
+	margin-top: 0;
+}
+@media only screen and ( max-width: 768px ){
+	#pContent .pIngressos .pDesc h4{
+		margin-top: 20px;
+	}
+}
+#pContent .pIngressos .pDesc a.btn{
+	border-radius: 20px;
+	text-transform: capitalize;
+}
+#pContent .pProfissionais{
+	margin-bottom: 50px;
+}
+#pContent .pProfissionais b{
+	display: block;
+}
+
+#pRodape .pContato{
+	background-color: rgba(255,255,255,0.06);
+	padding: 50px 0;
+}
+#pRodape .pContato h6{
+	margin-bottom: 60px;
+}
+#pRodape .pContato h6 span{
+	position: relative;
+}
+#pRodape .pContato h6 span::before{
+	content: "";
+	width: 50px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: currentColor;
+	position: absolute;
+	top: calc(100% + 20px);
+	left: 0;
+}
+
+#pRodape .pNewsletter{
+	background-color: rgba(255,255,255,0.03);
+	padding: 20px 0;
+}
+#pRodape .pNewsletter h6{
+	font-size: 12px;
+	letter-spacing: 1px;
+	display: inline-block;
+	width: 300px;
+	padding-top: 2px;
+}
+#pRodape .pNewsletter h6 b{
+	font-size: 14px;
+	display: block;
+}
+#pRodape .pNewsletter form{
+	display: inline-block;
+	vertical-align: top;
+}
+#pRodape .pNewsletter input{
+	width: 250px;
+	height: 40px;
+	border: 2px solid #e13664;
+	border-radius: 25px;
+	box-sizing: border-box;
+	padding: 0 15px;
+	margin: 0;
+}
+#pRodape .pNewsletter button{
+	height: 40px;
+	border-radius: 25px;
+	border: 0;
+	margin-left: 15px;
+	padding: 0 20px;
+}
+
+#tRodape ul.right li a{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
 
 
 
